@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    height: 100vh;
+    
+}
+.text {
+    padding-left: 5px;
+}
+.text1 {
+    padding-left: 5px;
+}
+.text2 {
+    padding-left: 5px;
+}
+.window{
+    background-color:black;
+    width: 300px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-rows: auto;
+
+
+    
+}
+.window > .head {
+    background-color:white;
+    color: black;
+    padding: 5px 0;
+    position: relative;
+    font-size: 8px; 
+    font-family:Arial, Helvetica, sans-serif;
+}
+.window > .head > .close {
+    display:  block;
+    width: 16px;
+    height: 16px;
+    margin-left: auto;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    
+}
+.window > .head > .close::before,
+.window > .head > .close::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: black;
+    left:50%;
+    border-radius: 2px;
+    transform: translateX(-50%) rotateZ(-45deg);
+    transition: background-color 200ms;
+   
+}
+.window > .head > .close::after{
+    transform: translateX(-50%) rotateZ(45deg);
+}
+
+.window > .head > .close:hover::before,
+.window > .head > .close:hover::after {
+    background-color: red;
+    cursor: pointer;
+}
+
+.window > .body {
+    overflow: hidden;
+}
+
+.osnova >.osnova1 {
+    background-color: white;
+    color: black;
+    padding: 10px;
+   word-spacing: 80px;
+    font-size: 15px;
+}
+
+.main {
+    background-color: white;
+    color:black;
+    text-align:center;
+    width: 300px;
+    font: 10px sans-serif;
+    padding: 5px;
+    width:300px;
+
+}
+button{
+    background-color:steelblue;
+    color: white;
+    position: relative;
+    width:300px;
+    transform: translate(-50% 0);
+  
+}
+
+.help {
+    background-color: white;
+    color:red;
+    width: 300px;
+    padding: 15px;
+    text-align-last: center;
+    font: 10px sans-serif;
+}
+
+.last {
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 15px;
+    text-align-last: center;
+    font: 8px sans-serif;
+
+}
